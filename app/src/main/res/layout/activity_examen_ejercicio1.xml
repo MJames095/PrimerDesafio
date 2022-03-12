@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2EBF2"
+    tools:context=".examen_ejercicio1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="232dp"
+        android:gravity="center_horizontal"
+        android:text="Resolución de fórmula cuadrática"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btncalculo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/valuea"
+        android:layout_width="251dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="Ingrese el valor de a"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/valueb"
+        android:layout_width="251dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:hint="Ingrese el valor de b"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/valuec"
+        android:layout_width="251dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="260dp"
+        android:ems="10"
+        android:hint="Ingrese el valor de c"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncalculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/black"
+        android:text="Calcular"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/resultado"
+        app:layout_constraintStart_toStartOf="@+id/resultado"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="149dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEmpezar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncalculo" />
+
+    <Button
+        android:id="@+id/btnEmpezar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="58dp"
+        android:backgroundTint="@color/black"
+        android:onClick="finalizar"
+        android:text="Regresar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
